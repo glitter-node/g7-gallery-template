@@ -1,0 +1,70 @@
+{
+  "layout_name": "glitter_gallery_partial_home_cta",
+  "type": "basic",
+  "name": "Section",
+  "props": {
+    "className": "gallery-surface gallery-hero"
+  },
+  "children": [
+    {
+      "type": "basic",
+      "name": "Div",
+      "props": {
+        "className": "gallery-hero-copy"
+      },
+      "children": [
+        {
+          "type": "basic",
+          "name": "Span",
+          "text": "방문 유도",
+          "props": {
+            "className": "gallery-kicker"
+          }
+        },
+        {
+          "type": "basic",
+          "name": "H2",
+          "text": "전시를 직접 보고 싶다면, 방문안내와 문의를 먼저 확인해 주세요",
+          "props": {
+            "className": "gallery-title-lg"
+          }
+        },
+        {
+          "type": "basic",
+          "name": "P",
+          "text": "관람 시간, 위치, 프로그램 안내, 협업 및 대관 문의까지 하나의 흐름으로 이어질 수 있도록 홈 화면 하단 CTA를 배치했습니다.",
+          "props": {
+            "className": "gallery-body-lg"
+          }
+        },
+        {
+          "type": "basic",
+          "name": "Div",
+          "props": {
+            "className": "gallery-actions"
+          },
+          "children": [
+            {
+              "type": "basic",
+              "name": "A",
+              "text": "방문안내 보기",
+              "props": {
+                "href": "/visit",
+                "className": "gallery-button"
+              }
+            },
+            {
+              "type": "basic",
+              "name": "A",
+              "text": "문의하기",
+              "props": {
+                "href": "/contact",
+                "className": "gallery-button-ghost"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

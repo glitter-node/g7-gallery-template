@@ -1,0 +1,35 @@
+{
+  "layout_name": "glitter_gallery_partial_common_header_brand",
+  "type": "basic",
+  "name": "Div",
+  "props": {
+    "className": "gallery-brand"
+  },
+  "children": [
+    {
+      "type": "basic",
+      "name": "Span",
+      "text": "$t:common.site_name",
+      "props": {
+        "className": "gallery-brand-mark"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:common.site_name",
+      "props": {
+        "href": "/",
+        "className": "gallery-brand-name"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "P",
+      "text": "$t:common.site_tagline",
+      "props": {
+        "className": "gallery-brand-tagline"
+      }
+    }
+  ]
+}

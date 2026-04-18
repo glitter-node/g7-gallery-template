@@ -1,0 +1,825 @@
+{
+  "version": "1.0.0",
+  "layout_name": "press",
+  "permissions": [],
+  "extends": "_user_base",
+  "meta": {
+    "title": "$t:pages.press_title"
+  },
+  "data_sources": [],
+  "slots": {
+    "content": [
+      {
+        "type": "basic",
+        "name": "Div",
+        "props": {
+          "className": "gallery-page-frame"
+        },
+        "children": [
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-inner"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-hero-copy"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Press",
+                        "props": {
+                          "className": "gallery-kicker"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H1",
+                        "text": "$t:pages.press_title",
+                        "props": {
+                          "className": "gallery-title-xl"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "기관 소개, 전시 관련 보도자료, 언론용 기본 안내를 한 페이지에서 확인할 수 있도록 정리한 공식 자료 랜딩입니다. 보도 대응에 필요한 핵심 문구와 자료 요청 흐름을 과장 없이 정돈해 신뢰감 있게 읽히도록 구성했습니다.",
+                        "props": {
+                          "className": "gallery-body-lg gallery-page-lead"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "이 페이지에서는 최근 보도자료, 전시 안내용 공식 문안, 기관 소개 자료 문의, 촬영 및 취재 요청 흐름을 확인할 수 있습니다. 이미지보다 날짜, 분류, 요약, 문의 경로가 먼저 읽히도록 텍스트 중심 구조를 유지했습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-page-summary"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Press Kit",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "전시 소개 문안과 기관 설명, 최근 공식 발표를 한 흐름 안에서 읽을 수 있도록 구성했습니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Media Use",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "촬영, 이미지 사용, 보도용 인용 문구 요청처럼 실무적으로 필요한 문의 지점을 분리해 안내합니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Official Tone",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "보도자료와 기관 소개는 news 페이지보다 조금 더 공식적인 메타 정보와 문장 톤으로 정리했습니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Press Releases",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "보도자료와 언론 안내를 날짜순으로 정리",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "news의 공지형 구조를 바탕으로 하되, 자료 성격과 문의 흐름이 더 분명히 읽히도록 분류와 요약을 공식 문서 톤으로 정돈했습니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-listing-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-muted gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "보도자료",
+                            "props": {
+                              "className": "gallery-status-pill"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "2026.04.18",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "Glitter Gallery 시즌 전시 개막 보도자료",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "시즌 대표 전시의 개막 일정과 참여 작가, 공간 구성의 핵심 문안을 언론용 요약 형식으로 정리했습니다. 전시 소개 기사나 캘린더형 전시 안내에 바로 참고할 수 있는 기본 정보 중심의 공지입니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "전시 발표",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "전시 보기",
+                            "props": {
+                              "href": "/exhibitions",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "언론 소개",
+                            "props": {
+                              "className": "gallery-status-pill"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "2026.04.22",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "기관 소개와 공간 성격 요약 안내",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "갤러리의 운영 방향, 전시 기조, 위치와 관람 동선의 특징을 간략한 소개 문안으로 정리했습니다. 기관 소개 기사, 인터뷰 서두, 행사 개요 페이지에 필요한 기본 설명을 바로 확인할 수 있습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "기관 개요",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "문의하기",
+                            "props": {
+                              "href": "/contact",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-muted gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "전시 안내",
+                            "props": {
+                              "className": "gallery-status-pill"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "2026.04.29",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "큐레이터 투어 및 미디어 프리뷰 일정 안내",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "언론 관계자와 협업 파트너를 위한 프리뷰 일정, 현장 동선, 사전 신청 흐름을 정리했습니다. 행사성 안내이지만 보도자료와 이어 읽을 수 있도록 공식 공지 형식으로 묶었습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "프리뷰 일정",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "소식 보기",
+                            "props": {
+                              "href": "/news",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "기관 소식",
+                            "props": {
+                              "className": "gallery-status-pill"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "2026.05.03",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "아카이브 열람 및 기관 방문 취재 요청 안내",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "기관 소개 기사나 장기 기획 취재를 위한 아카이브 열람 요청 절차를 요약했습니다. 촬영 가능 구역과 사전 협의가 필요한 항목을 함께 명시해 실무자가 빠르게 판단할 수 있도록 했습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "취재 요청",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "문의 연결",
+                            "props": {
+                              "href": "/contact",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-muted gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "보도자료",
+                            "props": {
+                              "className": "gallery-status-pill"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "2026.05.10",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "교육 프로그램 시즌 운영 계획 발표",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "전시 연계 교육 프로그램의 운영 방향과 대상, 신청 일정 안내를 공식 발표 형식으로 정리했습니다. 프로그램 담당자 인터뷰나 기관 소식 기사에서 인용 가능한 핵심 문장을 우선 배치했습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "프로그램 발표",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "상세 문의",
+                            "props": {
+                              "href": "/contact",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Media Guide",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "언론 및 협업 문의 전에 확인할 안내",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "실제 자료 요청과 취재 문의가 자주 발생하는 항목만 추려, contact 페이지로 넘어가기 전 필요한 기준을 먼저 읽을 수 있도록 구성했습니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-info-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Filming",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "촬영 및 취재 문의",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "현장 촬영, 인터뷰, 프리뷰 동행 취재는 희망 날짜와 매체명, 촬영 목적을 먼저 정리해 전달해 주세요. 공간 운영 시간과 관람객 동선에 영향을 주는 경우 별도 협의가 필요합니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Assets",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "이미지 및 자료 요청",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "전시 대표 이미지, 기관 소개 이미지, 작가 프로필 자료 요청 시 사용 매체와 게재 위치를 함께 알려 주세요. 요청 목적이 분명할수록 필요한 파일 범위를 더 정확하게 안내할 수 있습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Institutional Info",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "기관 소개 자료 문의",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "기관 연혁, 운영 방향, 공간 소개 문안처럼 소개성 자료가 필요한 경우 사용 목적과 필요 분량을 먼저 전달해 주세요. press 페이지의 기본 문안과 contact 페이지의 문의 경로를 함께 참고하면 준비가 빨라집니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-copy"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Next Step",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "자료를 확인했다면 다음 경로로 이어가세요",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "보도자료 확인 후 실제 문의나 전시 확인, 최신 운영 공지 점검까지 자연스럽게 이어질 수 있도록 관련 페이지를 함께 배치했습니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-actions"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "문의하기",
+                        "props": {
+                          "href": "/contact",
+                          "className": "gallery-button"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "전시 보기",
+                        "props": {
+                          "href": "/exhibitions",
+                          "className": "gallery-button-ghost"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "소식 보기",
+                        "props": {
+                          "href": "/news",
+                          "className": "gallery-button-ghost"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

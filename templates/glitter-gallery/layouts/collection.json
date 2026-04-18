@@ -1,0 +1,749 @@
+{
+  "version": "1.0.0",
+  "layout_name": "collection",
+  "permissions": [],
+  "extends": "_user_base",
+  "meta": {
+    "title": "$t:pages.collection_title"
+  },
+  "data_sources": [],
+  "slots": {
+    "content": [
+      {
+        "type": "basic",
+        "name": "Div",
+        "props": {
+          "className": "gallery-page-frame"
+        },
+        "children": [
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-inner"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-hero-copy"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Collection",
+                        "props": {
+                          "className": "gallery-kicker"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H1",
+                        "text": "$t:pages.collection_title",
+                        "props": {
+                          "className": "gallery-title-xl"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "소장품과 대표 작품을 이미지 중심 카드로 정리한 목록입니다. 작품명과 작가, 연도, 매체를 절제된 밀도로 배치해 첫 인상과 기본 정보를 함께 읽을 수 있도록 구성했습니다.",
+                        "props": {
+                          "className": "gallery-body-lg gallery-page-lead"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "작가 페이지에서 확인한 작업 세계를 실제 작품 단위로 이어 읽을 수 있도록, 주요 소장품과 연결 전시, 아카이브 문맥을 같은 흐름 안에 배치했습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-page-summary"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Image First",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "작품 이미지를 먼저 읽고, 이어서 제목과 매체, 연결 전시 정보를 짧게 파악할 수 있도록 카드 상단 비중을 높였습니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Archive Lens",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "현재 전시와 종료 전시를 가로지르는 작품 맥락이 자연스럽게 보이도록, 카드마다 아카이브 성격의 보조 정보를 함께 붙였습니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Fallback Ready",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "API 없이도 작품 목록 페이지처럼 완결되도록 정적 카드 리듬과 하단 연결 동선을 함께 구성했습니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "작품 목록",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "이미지 비중이 높은 소장품 카드 아카이브",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "작가명, 연도, 매체, 짧은 설명, 연결 전시 정보를 일정한 카드 리듬 안에 정리해 목록 탐색이 자연스럽게 이어지도록 설계했습니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-listing-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-card-media-overlay"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "Collection Highlight",
+                                "props": {
+                                  "className": "gallery-meta"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "김서윤 · 혼합 재료 · 2024",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "정지된 파도",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "수면의 잔광처럼 흔들리는 표면을 얇은 색층으로 축적한 작품입니다. 정적인 화면 안에 미세한 움직임을 남겨 관람자의 시선을 오래 머물게 합니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "연결 전시: 빛의 수집가들",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "작가 보기",
+                            "props": {
+                              "href": "/artists",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media gallery-card-media-soft"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "박도현 · 설치 · 2025",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "기울어진 정원",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "구조체와 그림자의 긴장을 이용해 관람 동선을 새롭게 인식하게 만드는 설치 작업입니다. 재료 간 간격과 공기의 흐름까지 작품의 일부로 다룹니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "연결 전시: 정원의 시간",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "전시 보기",
+                            "props": {
+                              "href": "/exhibitions",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "최민아 · 사진 · 2023",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "저녁 이후의 창문",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "빛이 사라진 뒤에도 남아 있는 실내의 온도를 기록한 사진 연작입니다. 차분한 색조와 정지된 프레임이 기억의 속도를 늦추는 역할을 합니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "아카이브 작품",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "작가 보기",
+                            "props": {
+                              "href": "/artists",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media gallery-card-media-soft"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "이하은 · 드로잉 · 2025",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "겹쳐지는 좌표",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "선과 여백의 긴장을 통해 이동의 방향을 암시하는 작업입니다. 단정한 드로잉 구조 안에서 관람자의 시선이 머무는 지점을 세밀하게 설계합니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "연결 페이지: 소장품 아카이브",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "전시 보기",
+                            "props": {
+                              "href": "/exhibitions",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-card-media-overlay"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "Archive Selection",
+                                "props": {
+                                  "className": "gallery-meta"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "윤지호 · 영상 설치 · 2022",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "천천히 열린 밤",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "미세한 조도 변화와 호흡 소리를 겹쳐 공간의 체류감을 길게 늘리는 영상 설치입니다. 종료 전시 이후에도 아카이브 문맥에서 자주 호출되는 대표 작업으로 설정했습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "연결 전시: 밤의 호흡",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "방문 안내",
+                            "props": {
+                              "href": "/visit",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-quote-card"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Archive Note",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "작품 읽기와 전시 맥락을 함께 남기는 아카이브 관점",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "이 페이지는 개별 작품을 단순히 나열하는 대신, 작가 소개와 전시 경험 사이를 이어 주는 중간 아카이브 역할을 담당합니다. 따라서 각 카드에는 작품명과 작가 정보뿐 아니라 연결 전시나 관람 흐름을 읽을 수 있는 짧은 단서를 함께 남겼습니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "추후 실제 데이터가 연결되더라도 현재 구조를 그대로 유지한 채 작품 메타와 연결 링크만 대체할 수 있도록, 카드 정보 밀도를 미리 절제된 형태로 고정했습니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-copy"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Next Step",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "작품을 살펴봤다면, 이제 작가와 전시 흐름으로 시선을 넓혀 보세요",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "작가별 작업 세계와 현재 진행 중인 전시 맥락을 함께 확인하면, 소장품 목록이 어떤 기준으로 구성되는지 더 선명하게 읽을 수 있습니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-actions"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "작가 보기",
+                        "props": {
+                          "href": "/artists",
+                          "className": "gallery-button"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "전시 보기",
+                        "props": {
+                          "href": "/exhibitions",
+                          "className": "gallery-button-ghost"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

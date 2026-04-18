@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "templateId": "glitter-gallery",
+  "version": "0.1.0",
+  "components": {
+    "basic": [
+      {
+        "name": "Div",
+        "type": "basic",
+        "description": "HTML div wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Section",
+        "type": "basic",
+        "description": "HTML section wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Article",
+        "type": "basic",
+        "description": "HTML article wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Nav",
+        "type": "basic",
+        "description": "HTML nav wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "A",
+        "type": "basic",
+        "description": "HTML anchor wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Span",
+        "type": "basic",
+        "description": "HTML span wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "P",
+        "type": "basic",
+        "description": "HTML paragraph wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "H1",
+        "type": "basic",
+        "description": "HTML h1 wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "H2",
+        "type": "basic",
+        "description": "HTML h2 wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "H3",
+        "type": "basic",
+        "description": "HTML h3 wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Ul",
+        "type": "basic",
+        "description": "HTML ul wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Li",
+        "type": "basic",
+        "description": "HTML li wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Img",
+        "type": "basic",
+        "description": "HTML img wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Form",
+        "type": "basic",
+        "description": "HTML form wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Label",
+        "type": "basic",
+        "description": "HTML label wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Input",
+        "type": "basic",
+        "description": "HTML input wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Select",
+        "type": "basic",
+        "description": "HTML select wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Option",
+        "type": "basic",
+        "description": "HTML option wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Textarea",
+        "type": "basic",
+        "description": "HTML textarea wrapper",
+        "path": "src/index.ts"
+      },
+      {
+        "name": "Button",
+        "type": "basic",
+        "description": "HTML button wrapper",
+        "path": "src/index.ts"
+      }
+    ],
+    "composite": [],
+    "layout": []
+  }
+}

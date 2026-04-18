@@ -1,0 +1,43 @@
+{
+  "layout_name": "glitter_gallery_partial_home_space_summary",
+  "type": "basic",
+  "name": "Section",
+  "props": {
+    "className": "gallery-card gallery-card-hero"
+  },
+  "children": [
+    {
+      "type": "basic",
+      "name": "Span",
+      "text": "공간 소개",
+      "props": {
+        "className": "gallery-kicker"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "H3",
+      "text": "{{space_summary.data.title ?? '공간 소개'}}",
+      "props": {
+        "className": "gallery-title-md"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "P",
+      "text": "{{space_summary.data.description ?? $t:pages.fallback_description}}",
+      "props": {
+        "className": "gallery-body"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "공간 더 보기",
+      "props": {
+        "href": "/about",
+        "className": "gallery-button-ghost"
+      }
+    }
+  ]
+}

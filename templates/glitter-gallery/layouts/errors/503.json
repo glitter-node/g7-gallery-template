@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "layout_name": "404",
+  "extends": "_user_base",
+  "meta": {
+    "title": "$t:error.not_found_title"
+  },
+  "data_sources": [],
+  "slots": {
+    "content": [
+      {
+        "type": "basic",
+        "name": "Section",
+        "props": {
+          "className": "gallery-error-panel"
+        },
+        "children": [
+          {
+            "type": "basic",
+            "name": "Span",
+            "props": {
+              "className": "gallery-error-code",
+              "text": "404"
+            }
+          },
+          {
+            "type": "basic",
+            "name": "H1",
+            "props": {
+              "className": "gallery-error-title",
+              "text": "$t:error.not_found_title"
+            }
+          },
+          {
+            "type": "basic",
+            "name": "P",
+            "props": {
+              "className": "gallery-error-description",
+              "text": "$t:error.not_found_description"
+            }
+          },
+          {
+            "type": "basic",
+            "name": "A",
+            "props": {
+              "href": "/",
+              "className": "gallery-error-action",
+              "text": "$t:error.back_home"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

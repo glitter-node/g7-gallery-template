@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "glitter-gallery 템플릿 SEO 페이지 생성 설정",
+  "text_props": [
+    "text",
+    "label",
+    "value",
+    "title"
+  ],
+  "attr_map": {
+    "className": "class",
+    "htmlFor": "for"
+  },
+  "allowed_attrs": [
+    "class",
+    "id",
+    "href",
+    "src",
+    "alt",
+    "title",
+    "name",
+    "type",
+    "placeholder",
+    "for",
+    "target",
+    "rel",
+    "width",
+    "height",
+    "role",
+    "aria-label",
+    "aria-describedby",
+    "data-testid",
+    "style"
+  ],
+  "stylesheets": [],
+  "self_closing": [
+    "img",
+    "input",
+    "hr",
+    "br"
+  ],
+  "seo_overrides": {
+    "_global": {
+      "locale": "ko_KR",
+      "site_name": "Glitter Gallery",
+      "type": "website",
+      "title_template": "%s | Glitter Gallery",
+      "description": "미술관, 갤러리, 전시 플랫폼을 위한 정제된 사용자 템플릿",
+      "image": "/api/templates/assets/glitter-gallery/images/preview/thumbnail.png"
+    },
+    "_local": {
+      "pageDefaults": {
+        "home": {
+          "title": "Glitter Gallery | 미술관형 사용자 템플릿",
+          "description": "대표 전시, 작가, 소장품, 방문 안내를 감성적인 에디토리얼 레이아웃으로 제공하는 미술관형 홈 화면"
+        },
+        "exhibitions": {
+          "title": "전시 안내 | Glitter Gallery",
+          "description": "현재 전시, 예정 전시, 아카이브 전시를 기간과 상태 중심으로 정리한 전시 목록 페이지"
+        },
+        "artists": {
+          "title": "작가 소개 | Glitter Gallery",
+          "description": "작가 프로필 이미지와 짧은 소개, 작업 키워드를 중심으로 구성한 작가 목록 페이지"
+        },
+        "visit": {
+          "title": "방문 안내 | Glitter Gallery",
+          "description": "운영시간, 위치, 관람료, 예약 링크를 한 번에 확인할 수 있는 방문 안내 페이지"
+        }
+      }
+    }
+  },
+  "component_map": {
+    "Div": {
+      "tag": "div"
+    },
+    "Section": {
+      "tag": "section"
+    },
+    "Article": {
+      "tag": "article"
+    },
+    "Nav": {
+      "tag": "nav"
+    },
+    "A": {
+      "tag": "a"
+    },
+    "Span": {
+      "tag": "span"
+    },
+    "P": {
+      "tag": "p"
+    },
+    "H1": {
+      "tag": "h1"
+    },
+    "H2": {
+      "tag": "h2"
+    },
+    "H3": {
+      "tag": "h3"
+    },
+    "Ul": {
+      "tag": "ul"
+    },
+    "Li": {
+      "tag": "li"
+    },
+    "Img": {
+      "tag": "img"
+    },
+    "Form": {
+      "tag": "form"
+    },
+    "Label": {
+      "tag": "label"
+    },
+    "Input": {
+      "tag": "input"
+    },
+    "Textarea": {
+      "tag": "textarea"
+    },
+    "Button": {
+      "tag": "button"
+    }
+  }
+}

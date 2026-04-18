@@ -1,0 +1,752 @@
+{
+  "version": "1.0.0",
+  "layout_name": "about",
+  "permissions": [],
+  "extends": "_user_base",
+  "meta": {
+    "title": "$t:pages.about_title"
+  },
+  "data_sources": [],
+  "slots": {
+    "content": [
+      {
+        "type": "basic",
+        "name": "Div",
+        "props": {
+          "className": "gallery-page-frame"
+        },
+        "children": [
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-inner"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-hero-copy"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "About",
+                        "props": {
+                          "className": "gallery-kicker"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H1",
+                        "text": "$t:pages.about_title",
+                        "props": {
+                          "className": "gallery-title-xl"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "Glitter Gallery는 전시, 작가, 프로그램, 아카이브를 하나의 흐름으로 연결해 동시대 감각을 읽는 미술관형 공간을 지향합니다. 첫 방문자에게는 공간의 인상을, 반복 방문자에게는 축적되는 문맥을 전달하는 소개 랜딩으로 구성했습니다.",
+                        "props": {
+                          "className": "gallery-body-lg gallery-page-lead"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "이 페이지에서는 기관의 운영 철학과 전시 방향, 프로그램 성격, 큐레토리얼 관점을 함께 확인할 수 있습니다. 단순한 기관 소개를 넘어서 why와 how가 함께 읽히도록 서사와 운영 정보를 균형 있게 배치했습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-page-summary"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Identity",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "전시 공간이자 해석의 플랫폼으로서, 작품 감상과 대화를 함께 설계하는 기관 정체성을 소개합니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Program",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "전시와 작가 소개에 머무르지 않고 토크, 교육, 아카이브 프로그램을 함께 운영하는 구조를 요약합니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Public Flow",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "about에서 기관 문맥을 이해한 뒤 exhibitions, visit, press, links로 자연스럽게 이어질 수 있도록 페이지 간 흐름을 정리했습니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Institution",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "작품과 장면, 대화가 함께 남는 기관 소개",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "Glitter Gallery는 동시대 작가의 작업을 전시로 제안하는 데서 멈추지 않고, 관람 이후에도 해석과 기록이 남도록 프로그램과 아카이브를 함께 운영합니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-info-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Mission",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "운영 철학",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "감각적인 첫 인상과 깊이 있는 재방문 경험이 함께 작동하는 전시 공간을 지향합니다. 작품을 보여주는 방식뿐 아니라, 작품을 둘러싼 시간과 대화를 함께 큐레이션하는 것이 운영의 기준입니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Artists & Exhibitions",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "다루는 전시와 작가",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "회화, 사진, 설치, 연구 기반 작업처럼 서로 다른 매체를 연결해 한 시즌의 정서를 만드는 전시를 기획합니다. 작가 개인의 작업 세계와 집합적인 장면이 동시에 읽히는 구성을 중요하게 봅니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Public Program",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "프로그램의 역할",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "도슨트, 토크, 교육 프로그램은 전시를 보충하는 부속 일정이 아니라 관람 경험을 확장하는 또 하나의 레이어로 설계합니다. visit와 news에서 보이는 실무 정보의 배경이 되는 운영 철학을 여기서 설명합니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Programs & Space",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "공간과 프로그램이 함께 작동하는 방식",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "전시를 보여주는 공간 운영과, 전시를 해석하는 프로그램 운영을 분리하지 않고 같은 흐름 안에서 다룹니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-info-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Exhibition Program",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "전시 프로그램",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "시즌 대표 전시와 소규모 프로젝트를 함께 운영해, 한쪽은 강한 첫 인상을 만들고 다른 한쪽은 세밀한 관찰의 장면을 보완합니다. home에서 보인 대표 전시 톤이 여기서 기관 구조로 설명됩니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Talk & Education",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "토크와 교육 프로그램",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "작가 토크, 큐레이터 해설, 교육 연계 프로그램은 작품 감상의 언어를 확장하는 역할을 합니다. press에서 보이는 공식 발표와 news에서 보이는 운영 공지가 실제로 어떤 경험으로 이어지는지 설명하는 섹션입니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Archive",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "아카이브와 기록",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "종료된 전시와 프로그램을 단순히 보관하는 것이 아니라, 이후의 연구와 소개 자료로 다시 연결될 수 있도록 아카이브 문맥을 남깁니다. links와 press에서 파생되는 외부 참조 흐름도 이 기록성을 바탕으로 설계됩니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Public Access",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "공간 접근과 방문 흐름",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "방문자는 전시만 보는 것이 아니라 운영 시간, 입장 정책, 문의 경로까지 포함한 전체 경험을 거칩니다. 그래서 visit 페이지의 실용 정보도 기관 소개의 일부로 연결해 이해할 수 있도록 구성했습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-quote-card"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Span",
+                "text": "Curatorial View",
+                "props": {
+                  "className": "gallery-meta"
+                }
+              },
+              {
+                "type": "basic",
+                "name": "P",
+                "text": "우리는 동시대 작업을 단순히 소개하는 것이 아니라, 지역의 감각과 오늘의 질문, 그리고 이후에 남을 기록을 함께 바라보며 전시를 구성합니다.",
+                "props": {
+                  "className": "gallery-quote-text"
+                }
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Curatorial Practice",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "왜 이런 전시와 작가를 소개하는가",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "기관 소개의 핵심은 무엇을 보여주는지보다 왜 이 장면을 선택하는지에 있습니다. 지역성, 동시대성, 아카이브 관점을 함께 설명해 페이지의 서사 중심을 만듭니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-info-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Contemporary Scene",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "동시대성",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "현재의 감각과 질문을 담은 작업을 중심으로 전시를 구성하되, 빠른 유행보다 오래 남는 해석의 밀도를 중요하게 봅니다. 그래서 한 전시 안에서도 서로 다른 매체와 속도를 공존시키는 방식을 택합니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Local Context",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "지역과 장면",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "도시의 생활 리듬과 지역의 문화 맥락을 전시 경험 안에 자연스럽게 반영합니다. 방문자가 공간 밖의 시간과 전시장 안의 시간을 함께 감각하도록 운영 방향을 설정합니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Archive Lens",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "아카이브 관점",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "지금의 전시가 이후의 소개 자료와 연구 맥락으로 남을 수 있도록, 문안과 기록 구조를 함께 설계합니다. press와 links가 단순 부가 페이지가 아니라 기관 서사의 연장선이 되는 이유를 이 관점에서 설명합니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-copy"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Next Step",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "기관 소개를 읽었다면 다음 흐름으로 이어가세요",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "about에서 기관의 시선과 운영 구조를 이해한 뒤에는 현재 전시, 실제 방문 정보, 문의 경로로 자연스럽게 이어질 수 있도록 주요 페이지를 함께 배치했습니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-actions"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "전시 보기",
+                        "props": {
+                          "href": "/exhibitions",
+                          "className": "gallery-button"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "방문 안내 보기",
+                        "props": {
+                          "href": "/visit",
+                          "className": "gallery-button-ghost"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "문의하기",
+                        "props": {
+                          "href": "/contact",
+                          "className": "gallery-button-ghost"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

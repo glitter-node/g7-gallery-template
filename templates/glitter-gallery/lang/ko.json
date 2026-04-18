@@ -1,0 +1,17 @@
+{
+  "common": {
+    "$partial": "partial/ko/common.json"
+  },
+  "nav": {
+    "$partial": "partial/ko/nav.json"
+  },
+  "footer": {
+    "$partial": "partial/ko/footer.json"
+  },
+  "pages": {
+    "$partial": "partial/ko/pages.json"
+  },
+  "error": {
+    "$partial": "partial/ko/error.json"
+  }
+}

@@ -1,0 +1,711 @@
+{
+  "version": "1.0.0",
+  "layout_name": "artists",
+  "permissions": [],
+  "extends": "_user_base",
+  "meta": {
+    "title": "$t:pages.artists_title"
+  },
+  "data_sources": [],
+  "slots": {
+    "content": [
+      {
+        "type": "basic",
+        "name": "Div",
+        "props": {
+          "className": "gallery-page-frame"
+        },
+        "children": [
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-inner"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-hero-copy"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Artists",
+                        "props": {
+                          "className": "gallery-kicker"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H1",
+                        "text": "$t:pages.artists_title",
+                        "props": {
+                          "className": "gallery-title-xl"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "공간의 분위기와 전시의 밀도를 함께 만들어 가는 작가들을 소개합니다. 짧은 소개와 작업 키워드, 관찰 포인트를 카드 단위로 정리했습니다.",
+                        "props": {
+                          "className": "gallery-body-lg gallery-page-lead"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "전시 페이지에서 만난 작품 흐름을 작가 단위로 다시 읽을 수 있도록, 참여 작가와 주요 관심 주제, 대표 작업 성격을 함께 배치했습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-page-summary"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Portrait",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "이미지가 없을 때도 동일 비율의 초상 영역을 유지해 카드 높이를 안정적으로 맞춥니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Profile",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "이름, 분야, 한 줄 작업 키워드와 소개 문단을 고정 순서로 배치해 스캔 속도를 높입니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Relation",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "대표 작업, 관심 주제, 연결 전시를 카드 하단에 두어 전시 페이지와 자연스럽게 이어지도록 구성합니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "작가 목록",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "프로필 중심의 정제된 카드 레이아웃",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-listing-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media gallery-card-media-tall"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-card-media-overlay"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "Featured Artist",
+                                "props": {
+                                  "className": "gallery-meta"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "회화 / 빛과 표면",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "김서윤",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "은은한 색면과 미세한 결을 통해 빛이 머무는 장면을 탐구하는 작가입니다. 회화의 표면을 시간의 층위처럼 다루며 공간의 온도를 섬세하게 조절합니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "대표 주제: 빛, 표면, 색의 밀도",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "참여 전시: 빛의 수집가들",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "작품 세계 보기",
+                            "props": {
+                              "href": "/collection",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media gallery-card-media-tall"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-card-media-overlay"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "Participating Artist",
+                                "props": {
+                                  "className": "gallery-meta"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "설치 / 공간과 구조",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "박도현",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "재료의 긴장과 비어 있는 간격을 통해 관람 동선 자체를 작품으로 확장합니다. 구조와 잔향, 이동의 속도를 하나의 장면으로 다루는 작업을 이어갑니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "대표 주제: 공간, 구조, 잔향",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "참여 전시: 정원의 시간",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "전시 맥락 보기",
+                            "props": {
+                              "href": "/exhibitions",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media gallery-card-media-tall"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-card-media-overlay"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "Archive Artist",
+                                "props": {
+                                  "className": "gallery-meta"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "사진 / 기록과 잔광",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "최민아",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "도시의 잔광과 사라지는 장면을 수집하며 서정적인 기록 이미지를 만듭니다. 밤의 풍경과 아카이브 감각을 결합해 기억의 표면을 천천히 드러냅니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "대표 주제: 기록, 밤의 풍경, 아카이브",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "연결 전시: 밤의 표면",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "아카이브 보기",
+                            "props": {
+                              "href": "/about",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media gallery-card-media-tall"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-card-media-overlay"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "Selected Artist",
+                                "props": {
+                                  "className": "gallery-meta"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "드로잉 / 여백과 좌표",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "이하은",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "선과 빈 공간의 긴장을 통해 이동의 방향과 시선의 속도를 드러냅니다. 전시 공간 안에서 작품 사이 간격까지 하나의 리듬으로 설계하는 작가입니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "대표 주제: 선, 좌표, 이동의 리듬",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "연결 페이지: 소장품",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "소장품 보기",
+                            "props": {
+                              "href": "/collection",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-quote-card"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Span",
+                "text": "Curatorial Note",
+                "props": {
+                  "className": "gallery-meta"
+                }
+              },
+              {
+                "type": "basic",
+                "name": "P",
+                "text": "이 페이지는 작가를 단순한 인명 목록이 아니라 전시의 결을 만드는 감각의 축으로 소개합니다. 서로 다른 매체와 태도를 지닌 작가들을 나란히 배치해 공간 안에서 어떻게 다른 밀도가 형성되는지 읽을 수 있도록 구성했습니다.",
+                "props": {
+                  "className": "gallery-quote-text"
+                }
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-copy"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Next Step",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "작가를 살펴봤다면, 전시와 소장품 페이지로 흐름을 이어가 보세요",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "대표 작업과 전시 맥락은 전시 목록과 소장품 페이지를 함께 볼 때 더 분명하게 연결됩니다. 방문을 계획하고 있다면 방문 안내도 함께 확인해 주세요.",
+                    "props": {
+                      "className": "gallery-body-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-actions"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "전시 보기",
+                        "props": {
+                          "href": "/exhibitions",
+                          "className": "gallery-button"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "방문안내",
+                        "props": {
+                          "href": "/visit",
+                          "className": "gallery-button-ghost"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

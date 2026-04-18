@@ -1,0 +1,101 @@
+{
+  "identifier": "glitter-gallery",
+  "vendor": "Glitter.kr",
+  "name": {
+    "ko": "Glitter Gallery",
+    "en": "Glitter Gallery"
+  },
+  "version": "0.1.0-beta.2",
+  "license": "MIT",
+  "description": {
+    "ko": "미술관, 갤러리, 전시 플랫폼을 위한 미니멀 에디토리얼 사용자 템플릿",
+    "en": "A minimal editorial user template for museums, galleries, and exhibition platforms"
+  },
+  "type": "user",
+  "locales": [
+    "ko",
+    "en"
+  ],
+  "author": {
+    "name": "GlitterBz",
+    "email": "contact@glitterbz.com",
+    "url": "https://glitterbz.com"
+  },
+  "release_date": "2026-04-18",
+  "g7_version": ">=7.0.0-beta.1",
+  "tags": [
+    "gallery",
+    "museum",
+    "exhibition",
+    "editorial",
+    "portfolio",
+    "art-space"
+  ],
+  "dependencies": {
+    "modules": {},
+    "plugins": {}
+  },
+  "assets": {
+    "css": [
+      "dist/css/components.css"
+    ],
+    "js": [
+      "dist/js/components.iife.js"
+    ],
+    "fonts": [],
+    "images": [
+      "preview/thumbnail.png",
+      "preview/screenshot-home.png",
+      "preview/screenshot-exhibitions.png"
+    ]
+  },
+  "components": {
+    "basic": [
+      "a",
+      "article",
+      "button",
+      "div",
+      "form",
+      "h1",
+      "h2",
+      "h3",
+      "img",
+      "input",
+      "label",
+      "li",
+      "nav",
+      "p",
+      "section",
+      "span",
+      "textarea",
+      "ul"
+    ],
+    "composite": [],
+    "layout": []
+  },
+  "preview": {
+    "thumbnail": "preview/thumbnail.png",
+    "screenshots": [
+      "preview/screenshot-home.png",
+      "preview/screenshot-exhibitions.png"
+    ]
+  },
+  "error_config": {
+    "layouts": {
+      "401": "401",
+      "403": "403",
+      "404": "404",
+      "500": "500",
+      "503": "503",
+      "maintenance": "maintenance"
+    }
+  },
+  "features": {
+    "dark_mode": false,
+    "responsive": true,
+    "multi_language": true,
+    "multi_currency": false
+  },
+  "github_url": "https://github.com/glitterbz/GalleryBz",
+  "github_changelog_url": "https://github.com/glitterbz/GalleryBz/blob/main/templates/glitter-gallery/CHANGELOG.md"
+}

@@ -1,0 +1,59 @@
+{
+  "layout_name": "glitter_gallery_partial_home_visit_summary",
+  "type": "basic",
+  "name": "Section",
+  "props": {
+    "className": "gallery-card gallery-card-hero"
+  },
+  "children": [
+    {
+      "type": "basic",
+      "name": "Span",
+      "text": "방문 안내",
+      "props": {
+        "className": "gallery-kicker"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "H3",
+      "text": "방문 전 꼭 확인할 정보",
+      "props": {
+        "className": "gallery-title-md"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "P",
+      "text": "{{visit_summary.data.hours ?? ''}}",
+      "props": {
+        "className": "gallery-meta"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "P",
+      "text": "{{visit_summary.data.location ?? ''}}",
+      "props": {
+        "className": "gallery-body"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "P",
+      "text": "{{visit_summary.data.note ?? $t:pages.fallback_description}}",
+      "props": {
+        "className": "gallery-caption"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "방문안내 전체 보기",
+      "props": {
+        "href": "/visit",
+        "className": "gallery-button-ghost"
+      }
+    }
+  ]
+}

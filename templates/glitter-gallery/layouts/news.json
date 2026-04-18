@@ -1,0 +1,825 @@
+{
+  "version": "1.0.0",
+  "layout_name": "news",
+  "permissions": [],
+  "extends": "_user_base",
+  "meta": {
+    "title": "$t:pages.news_title"
+  },
+  "data_sources": [],
+  "slots": {
+    "content": [
+      {
+        "type": "basic",
+        "name": "Div",
+        "props": {
+          "className": "gallery-page-frame"
+        },
+        "children": [
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-inner"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-hero-copy"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "News",
+                        "props": {
+                          "className": "gallery-kicker"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H1",
+                        "text": "$t:pages.news_title",
+                        "props": {
+                          "className": "gallery-title-xl"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "운영 공지, 전시 일정 변경, 프로그램 안내, 휴관 소식을 한 페이지에서 확인할 수 있도록 구성한 공지형 랜딩입니다. 홈에서 먼저 본 운영 공지와 프로그램 소식을 날짜와 분류 기준으로 다시 읽기 쉽게 정리했습니다.",
+                        "props": {
+                          "className": "gallery-body-lg gallery-page-lead"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "방문 전에는 운영 시간 변동, 신청이 필요한 프로그램, 전시 일정 변경 여부를 먼저 확인해 주세요. 이 페이지는 이미지보다 날짜, 분류, 핵심 요약이 빠르게 읽히도록 텍스트 중심으로 설계했습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-page-summary"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Coverage",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "운영 공지, 전시 변경, 프로그램 신청, 휴관 안내를 한 흐름 안에서 읽을 수 있도록 묶었습니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Reading Order",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "각 소식은 날짜, 분류, 제목, 요약 순서로 읽히도록 고정해 공지형 콘텐츠의 가독성을 우선했습니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Visit Check",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "방문 직전에는 이 페이지와 visit 페이지를 함께 보면 운영 변동과 현장 정보를 가장 빠르게 확인할 수 있습니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Latest Bulletin",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "최신 공지와 소식을 날짜순으로 확인",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "홈의 latest_news 문맥을 실제 공지 랜딩으로 확장해, 운영 이슈와 프로그램 업데이트를 더 높은 정보 밀도로 읽을 수 있도록 구성했습니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-listing-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-muted gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "공지",
+                            "props": {
+                              "className": "gallery-status-pill"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "2026.04.18",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "오프닝 리셉션 안내",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "새 시즌 전시 오프닝 당일 입장 동선과 리셉션 시작 시간을 먼저 확인할 수 있도록 핵심 운영 정보를 요약했습니다. 현장 혼잡을 줄이기 위해 입장 가능 시간과 안내 데스크 운영 시간도 함께 공지합니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "운영 공지",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "방문 안내 보기",
+                            "props": {
+                              "href": "/visit",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "전시",
+                            "props": {
+                              "className": "gallery-status-pill"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "2026.04.23",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "전시실 B 운영 동선 임시 조정",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "설치 점검으로 전시실 B의 동선이 한시적으로 변경됩니다. 대표 작품 관람은 가능하지만 일부 구간은 순차 입장으로 운영되어 관람 시간이 평소보다 길어질 수 있습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "전시 일정 변경",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "전시 보기",
+                            "props": {
+                              "href": "/exhibitions",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-muted gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "프로그램",
+                            "props": {
+                              "className": "gallery-status-pill"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "2026.04.27",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "주말 도슨트 프로그램 신청 오픈",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "주말 관람객을 위한 도슨트 프로그램 신청이 시작됩니다. 회차별 정원이 작기 때문에 방문 전 신청 가능 여부와 참여 연령 안내를 함께 확인해 주세요.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "신청 필요",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "문의하기",
+                            "props": {
+                              "href": "/contact",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "운영안내",
+                            "props": {
+                              "className": "gallery-status-pill"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "2026.05.02",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "5월 첫째 주 운영 시간 변동 안내",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "공휴일 운영과 전시 교체 준비 일정이 겹치며 일부 날짜의 마감 시간이 앞당겨집니다. 헛걸음을 줄이기 위해 방문 예정일이 있다면 당일 공지와 방문 안내를 함께 확인해 주세요.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "시간 변동",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "방문 안내 확인",
+                            "props": {
+                              "href": "/visit",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-muted gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "공지",
+                            "props": {
+                              "className": "gallery-status-pill"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "2026.05.06",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H2",
+                            "text": "정기 휴관 및 아카이브 열람 제한 안내",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "월요일 정기 휴관과 함께 아카이브 열람 공간의 서가 점검 일정이 진행됩니다. 자료 열람이나 협업 미팅이 필요한 경우에는 문의 페이지를 통해 사전 일정을 먼저 남겨 주세요.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-footer"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "휴관 공지",
+                            "props": {
+                              "className": "gallery-caption"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "A",
+                            "text": "상세 문의하기",
+                            "props": {
+                              "href": "/contact",
+                              "className": "gallery-button-ghost"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Operating Notes",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "방문 전에 먼저 확인이 필요한 운영 안내",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "공지 목록과 별개로, 실제 방문에 직접 영향을 주는 운영 정보를 다시 한 번 압축해 배치했습니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-info-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Closed Days",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "휴관과 운영 시간 변동",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "정기 휴관은 월요일 기준이며, 전시 교체 기간이나 공휴일에는 운영 시간이 달라질 수 있습니다. 방문 직전에는 news와 visit 페이지를 함께 확인하는 흐름을 권장합니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Programs",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "프로그램 신청과 정원 안내",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "도슨트, 토크, 교육 프로그램은 회차별 정원이 제한될 수 있습니다. 신청 시작일과 대상 연령, 단체 가능 여부를 공지 카드에서 먼저 확인한 뒤 문의를 이어가는 구조입니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Exhibition Update",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "전시 일정과 공간 점검 공지",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "전시 일정 조정이나 공간 점검 소식은 전시 관람 경험에 직접 영향을 줍니다. 따라서 exhibition 페이지로 이어지는 링크를 각 카드에 함께 배치해 즉시 다음 정보를 확인할 수 있게 했습니다.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-copy"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Next Step",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "소식을 확인했다면 다음 정보로 이어가세요",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "운영 공지 확인 후에는 실제 방문 정보와 문의 경로, 현재 전시 페이지를 차례대로 보면 관람 준비 흐름이 자연스럽게 이어집니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-actions"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "방문 안내 보기",
+                        "props": {
+                          "href": "/visit",
+                          "className": "gallery-button"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "문의하기",
+                        "props": {
+                          "href": "/contact",
+                          "className": "gallery-button-ghost"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "전시 보기",
+                        "props": {
+                          "href": "/exhibitions",
+                          "className": "gallery-button-ghost"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

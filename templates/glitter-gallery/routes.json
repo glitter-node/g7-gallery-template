@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "description": "glitter-gallery 사용자 템플릿 라우트 정의",
+  "routes": [
+    {
+      "path": "/",
+      "layout": "home",
+      "auth_required": false,
+      "meta": {
+        "title": "$t:nav.home"
+      }
+    },
+    {
+      "path": "/about",
+      "layout": "about",
+      "auth_required": false,
+      "meta": {
+        "title": "$t:nav.about"
+      }
+    },
+    {
+      "path": "/exhibitions",
+      "layout": "exhibitions",
+      "auth_required": false,
+      "meta": {
+        "title": "$t:nav.exhibitions"
+      }
+    },
+    {
+      "path": "/artists",
+      "layout": "artists",
+      "auth_required": false,
+      "meta": {
+        "title": "$t:nav.artists"
+      }
+    },
+    {
+      "path": "/collection",
+      "layout": "collection",
+      "auth_required": false,
+      "meta": {
+        "title": "$t:nav.collection"
+      }
+    },
+    {
+      "path": "/visit",
+      "layout": "visit",
+      "auth_required": false,
+      "meta": {
+        "title": "$t:nav.visit"
+      }
+    },
+    {
+      "path": "/news",
+      "layout": "news",
+      "auth_required": false,
+      "meta": {
+        "title": "$t:nav.news"
+      }
+    },
+    {
+      "path": "/contact",
+      "layout": "contact",
+      "auth_required": false,
+      "meta": {
+        "title": "$t:nav.contact"
+      }
+    }
+  ]
+}

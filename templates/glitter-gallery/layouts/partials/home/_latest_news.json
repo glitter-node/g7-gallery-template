@@ -1,0 +1,87 @@
+{
+  "layout_name": "glitter_gallery_partial_home_latest_news",
+  "type": "basic",
+  "name": "Section",
+  "props": {
+    "className": "gallery-stack"
+  },
+  "children": [
+    {
+      "type": "basic",
+      "name": "Div",
+      "props": {
+        "className": "gallery-section-heading"
+      },
+      "children": [
+        {
+          "type": "basic",
+          "name": "Span",
+          "text": "최신 소식",
+          "props": {
+            "className": "gallery-kicker"
+          }
+        },
+        {
+          "type": "basic",
+          "name": "H2",
+          "text": "운영 공지와 프로그램 소식",
+          "props": {
+            "className": "gallery-title-lg"
+          }
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "name": "Div",
+      "props": {
+        "className": "gallery-card-grid"
+      },
+      "children": [
+        {
+          "type": "basic",
+          "name": "Div",
+          "iteration": {
+            "source": "{{latest_news.data ?? []}}",
+            "item_var": "item"
+          },
+          "children": [
+            {
+              "type": "basic",
+              "name": "Div",
+              "props": {
+                "className": "gallery-card gallery-empty-card"
+              },
+              "children": [
+                {
+                  "type": "basic",
+                  "name": "Span",
+                  "text": "{{item.date ?? ''}}",
+                  "props": {
+                    "className": "gallery-meta"
+                  }
+                },
+                {
+                  "type": "basic",
+                  "name": "H3",
+                  "text": "{{item.title ?? $t:pages.fallback_title}}",
+                  "props": {
+                    "className": "gallery-title-md"
+                  }
+                },
+                {
+                  "type": "basic",
+                  "name": "P",
+                  "text": "{{item.summary ?? $t:pages.fallback_description}}",
+                  "props": {
+                    "className": "gallery-body"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

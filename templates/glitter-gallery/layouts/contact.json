@@ -1,0 +1,806 @@
+{
+  "version": "1.0.0",
+  "layout_name": "contact",
+  "extends": "_user_base",
+  "meta": {
+    "title": "$t:pages.contact_title"
+  },
+  "data_sources": [],
+  "slots": {
+    "content": [
+      {
+        "type": "basic",
+        "name": "Div",
+        "props": {
+          "className": "gallery-page-frame"
+        },
+        "children": [
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-inner"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-hero-copy"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Contact",
+                        "props": {
+                          "className": "gallery-kicker"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H1",
+                        "text": "$t:pages.contact_title",
+                        "props": {
+                          "className": "gallery-title-xl"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "일반 문의부터 전시 협업, 단체 관람, 프로그램 및 아카이브 관련 연락까지 한 페이지에서 안내하는 문의 허브입니다. 실제 폼 연결 전에도 어떤 경로로 무엇을 문의해야 하는지 명확하게 파악할 수 있도록 구성했습니다.",
+                        "props": {
+                          "className": "gallery-body-lg gallery-page-lead"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "문의 목적에 맞는 유형을 먼저 확인한 뒤, 대표 이메일과 전화, 응답 시간 안내를 참고해 필요한 정보를 함께 전달해 주세요.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-page-summary"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Email",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "hello@glitter-gallery.example / 문의 성격과 희망 응답 방식을 함께 기재",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Phone",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "02-555-1937 / 화요일-일요일 10:00-18:00 응대",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-summary-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "Visit Link",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "방문 안내와 함께 확인하면 단체 관람, 접근성, 위치 관련 문의를 더 정확하게 준비할 수 있습니다.",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "문의 유형",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "문의 목적에 따라 먼저 확인할 안내",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "문의 유형을 구분해 두면 답변 준비에 필요한 정보와 응답 경로를 더 빠르게 안내할 수 있습니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-info-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "General",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "일반 문의",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "운영 일정, 관람 기본 정보, 페이지 안내, 위치 확인처럼 가장 넓은 범위의 질문을 받습니다. 방문 전 확인이 필요한 경우 visit 페이지를 함께 참고해 주세요.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Collaboration",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "전시 및 협업 문의",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "기획 제안, 공간 협업, 외부 기관 연계, 프로그램 파트너십 문의를 포함합니다. 제안 목적과 예상 일정, 참고 자료가 있으면 함께 전달해 주세요.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Group Program",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "단체 관람 및 프로그램 문의",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "단체 예약, 도슨트 요청, 교육 프로그램, 접근성 지원이 필요한 방문 문의를 받습니다. 희망 날짜와 인원, 필요한 지원 내용을 함께 적어 주세요.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "Press Archive",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "보도 및 아카이브 문의",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "보도자료 요청, 이미지 사용 문의, 지난 전시 기록과 아카이브 자료 요청을 안내합니다. 필요한 매체명과 사용 목적을 명확히 남겨 주세요.",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "연락 경로",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "대표 연락처와 응답 기준",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-info-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "H2",
+                        "text": "대표 이메일",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-info-list"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-info-item"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "이메일",
+                                "props": {
+                                  "className": "gallery-info-label"
+                                }
+                              },
+                              {
+                                "type": "basic",
+                                "name": "P",
+                                "text": "hello@glitter-gallery.example",
+                                "props": {
+                                  "className": "gallery-info-value"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-info-item"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "권장 기재 정보",
+                                "props": {
+                                  "className": "gallery-info-label"
+                                }
+                              },
+                              {
+                                "type": "basic",
+                                "name": "P",
+                                "text": "문의 유형, 소속 또는 이름, 희망 일정, 관련 링크나 첨부 자료 여부를 함께 적어 주시면 분류가 빨라집니다.",
+                                "props": {
+                                  "className": "gallery-info-value"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "H2",
+                        "text": "대표 전화",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-info-list"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-info-item"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "전화",
+                                "props": {
+                                  "className": "gallery-info-label"
+                                }
+                              },
+                              {
+                                "type": "basic",
+                                "name": "P",
+                                "text": "02-555-1937",
+                                "props": {
+                                  "className": "gallery-info-value"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-info-item"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "응답 시간",
+                                "props": {
+                                  "className": "gallery-info-label"
+                                }
+                              },
+                              {
+                                "type": "basic",
+                                "name": "P",
+                                "text": "화요일-일요일 10:00-18:00 / 전시 교체일과 휴관일에는 이메일 응대를 우선합니다.",
+                                "props": {
+                                  "className": "gallery-info-value"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Section",
+                    "props": {
+                      "className": "gallery-info-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "H2",
+                        "text": "방문 연결 정보",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-info-list"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-info-item"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "주소",
+                                "props": {
+                                  "className": "gallery-info-label"
+                                }
+                              },
+                              {
+                                "type": "basic",
+                                "name": "P",
+                                "text": "서울시 중구 예술로 100, Glitter Gallery 1F-2F",
+                                "props": {
+                                  "className": "gallery-info-value"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-info-item"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "방문 안내 연결",
+                                "props": {
+                                  "className": "gallery-info-label"
+                                }
+                              },
+                              {
+                                "type": "basic",
+                                "name": "P",
+                                "text": "단체 방문, 접근성 지원, 운영 시간 확인이 필요한 경우에는 방문 안내 페이지를 먼저 확인하면 문의 내용을 더 정확하게 정리할 수 있습니다.",
+                                "props": {
+                                  "className": "gallery-info-value"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-quote-card"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Before You Send",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "문의 전에 함께 남기면 좋은 정보",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-info-list"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-info-item"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "필수 정보 예시",
+                            "props": {
+                              "className": "gallery-info-label"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "문의 목적, 희망 일정, 인원, 연락 가능한 시간대, 참고가 될 링크 또는 문서를 함께 남겨 주세요.",
+                            "props": {
+                              "className": "gallery-info-value"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-info-item"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "답변 소요 안내",
+                            "props": {
+                              "className": "gallery-info-label"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "일반 문의는 1-2영업일, 협업 및 아카이브 문의는 검토 범위에 따라 조금 더 시간이 걸릴 수 있습니다.",
+                            "props": {
+                              "className": "gallery-info-value"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-info-item"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "자료 전달 가이드",
+                            "props": {
+                              "className": "gallery-info-label"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "보도자료, 기획안, 이미지 요청이 있는 경우 파일명과 사용 목적을 명확히 적어 주시면 검토와 회신이 수월합니다.",
+                            "props": {
+                              "className": "gallery-info-value"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-copy"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "Next Step",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "문의 전에는 방문 안내와 현재 전시 정보를 함께 확인해 주세요",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "방문 조건과 전시 일정, 운영 공지를 미리 확인하면 문의 내용이 더 구체적이고 정확해집니다.",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-actions"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "방문 안내 보기",
+                        "props": {
+                          "href": "/visit",
+                          "className": "gallery-button"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "현재 전시 보기",
+                        "props": {
+                          "href": "/exhibitions",
+                          "className": "gallery-button-ghost"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

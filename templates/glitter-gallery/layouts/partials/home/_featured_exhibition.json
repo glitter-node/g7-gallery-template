@@ -1,0 +1,129 @@
+{
+  "layout_name": "glitter_gallery_partial_home_featured_exhibition",
+  "type": "basic",
+  "name": "Section",
+  "props": {
+    "className": "gallery-stack"
+  },
+  "children": [
+    {
+      "type": "basic",
+      "name": "Div",
+      "props": {
+        "className": "gallery-section-heading"
+      },
+      "children": [
+        {
+          "type": "basic",
+          "name": "Span",
+          "text": "대표 전시",
+          "props": {
+            "className": "gallery-kicker"
+          }
+        },
+        {
+          "type": "basic",
+          "name": "H2",
+          "text": "지금 가장 먼저 보여주고 싶은 전시",
+          "props": {
+            "className": "gallery-title-lg"
+          }
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "name": "Div",
+      "iteration": {
+        "source": "{{featured_exhibitions.data ?? []}}",
+        "item_var": "item"
+      },
+      "children": [
+        {
+          "type": "basic",
+          "name": "Div",
+          "props": {
+            "className": "gallery-surface gallery-hero"
+          },
+          "children": [
+            {
+              "type": "basic",
+              "name": "Div",
+              "props": {
+                "className": "gallery-hero-inner"
+              },
+              "children": [
+                {
+                  "type": "basic",
+                  "name": "Div",
+                  "props": {
+                    "className": "gallery-hero-copy"
+                  },
+                  "children": [
+                    {
+                      "type": "basic",
+                      "name": "Span",
+                      "text": "{{item.tag ?? '현재 전시'}}",
+                      "props": {
+                        "className": "gallery-meta"
+                      }
+                    },
+                    {
+                      "type": "basic",
+                      "name": "H3",
+                      "text": "{{item.title ?? $t:pages.fallback_title}}",
+                      "props": {
+                        "className": "gallery-title-lg"
+                      }
+                    },
+                    {
+                      "type": "basic",
+                      "name": "P",
+                      "text": "{{item.period ?? ''}}",
+                      "props": {
+                        "className": "gallery-meta"
+                      }
+                    },
+                    {
+                      "type": "basic",
+                      "name": "P",
+                      "text": "{{item.description ?? $t:pages.fallback_description}}",
+                      "props": {
+                        "className": "gallery-body-lg"
+                      }
+                    },
+                    {
+                      "type": "basic",
+                      "name": "Div",
+                      "props": {
+                        "className": "gallery-actions"
+                      },
+                      "children": [
+                        {
+                          "type": "basic",
+                          "name": "A",
+                          "text": "전시 상세 보기",
+                          "props": {
+                            "href": "/exhibitions",
+                            "className": "gallery-button"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "basic",
+                  "name": "Div",
+                  "props": {
+                    "className": "gallery-card-media-soft"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

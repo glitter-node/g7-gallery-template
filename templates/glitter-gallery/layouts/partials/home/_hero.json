@@ -1,0 +1,111 @@
+{
+  "layout_name": "glitter_gallery_partial_home_hero",
+  "type": "basic",
+  "name": "Section",
+  "props": {
+    "className": "gallery-surface gallery-hero"
+  },
+  "children": [
+    {
+      "type": "basic",
+      "name": "Div",
+      "props": {
+        "className": "gallery-hero-inner"
+      },
+      "children": [
+        {
+          "type": "basic",
+          "name": "Div",
+          "props": {
+            "className": "gallery-hero-copy"
+          },
+          "children": [
+            {
+              "type": "basic",
+              "name": "Span",
+              "text": "대표 소개",
+              "props": {
+                "className": "gallery-kicker"
+              }
+            },
+            {
+              "type": "basic",
+              "name": "H1",
+              "text": "작품과 공간, 그리고 관람의 리듬을 한 화면에 담는 갤러리 템플릿",
+              "props": {
+                "className": "gallery-title-xl"
+              }
+            },
+            {
+              "type": "basic",
+              "name": "P",
+              "text": "Glitter Gallery 홈 화면은 대표 전시와 작가, 소장품, 방문 정보가 과하지 않게 이어지도록 설계된 첫인상용 랜딩입니다.",
+              "props": {
+                "className": "gallery-body-lg"
+              }
+            },
+            {
+              "type": "basic",
+              "name": "Div",
+              "props": {
+                "className": "gallery-actions"
+              },
+              "children": [
+                {
+                  "type": "basic",
+                  "name": "A",
+                  "text": "현재 전시 보기",
+                  "props": {
+                    "href": "/exhibitions",
+                    "className": "gallery-button"
+                  }
+                },
+                {
+                  "type": "basic",
+                  "name": "A",
+                  "text": "방문 계획하기",
+                  "props": {
+                    "href": "/visit",
+                    "className": "gallery-button-ghost"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "name": "Div",
+          "props": {
+            "className": "gallery-card gallery-card-hero"
+          },
+          "children": [
+            {
+              "type": "basic",
+              "name": "Div",
+              "props": {
+                "className": "gallery-card-media-soft"
+              }
+            },
+            {
+              "type": "basic",
+              "name": "Span",
+              "text": "Editorial Landing",
+              "props": {
+                "className": "gallery-meta"
+              }
+            },
+            {
+              "type": "basic",
+              "name": "P",
+              "text": "첫 화면에서는 한 장의 이미지와 짧은 서사만으로 공간의 온도를 전달합니다.",
+              "props": {
+                "className": "gallery-body"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

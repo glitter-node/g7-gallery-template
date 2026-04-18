@@ -1,0 +1,16 @@
+{
+  "home_title": "Home",
+  "about_title": "About",
+  "exhibitions_title": "Exhibitions",
+  "artists_title": "Artists",
+  "collection_title": "Collection",
+  "visit_title": "Visit",
+  "news_title": "News",
+  "contact_title": "Contact",
+  "fallback_title": "Content in Preparation",
+  "fallback_description": "Default content is rendered safely even when no data is available.",
+  "seo_home_description": "A refined museum-style layout for exhibitions, artists, collections, and visitor information.",
+  "seo_exhibitions_description": "Browse current, upcoming, and archived exhibitions with period and status details.",
+  "seo_artists_description": "Introduce participating artists with portraits, short bios, and practice keywords.",
+  "seo_visit_description": "Check opening hours, location, admission, and reservation links in one place."
+}

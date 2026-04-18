@@ -1,0 +1,172 @@
+{
+  "layout_name": "glitter_gallery_partial_common_header_nav",
+  "type": "basic",
+  "name": "Nav",
+  "props": {
+    "className": "gallery-nav"
+  },
+  "children": [
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.home",
+      "props": {
+        "href": "/",
+        "className": "gallery-nav-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.about",
+      "props": {
+        "href": "/about",
+        "className": "gallery-nav-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.exhibitions",
+      "props": {
+        "href": "/exhibitions",
+        "className": "gallery-nav-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.artists",
+      "props": {
+        "href": "/artists",
+        "className": "gallery-nav-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.collection",
+      "props": {
+        "href": "/collection",
+        "className": "gallery-nav-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.visit",
+      "props": {
+        "href": "/visit",
+        "className": "gallery-nav-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.news",
+      "props": {
+        "href": "/news",
+        "className": "gallery-nav-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.contact",
+      "props": {
+        "href": "/contact",
+        "className": "gallery-nav-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "Div",
+      "props": {
+        "className": "gallery-font-select-wrap"
+      },
+      "children": [
+        {
+          "type": "basic",
+          "name": "Select",
+          "props": {
+            "className": "gallery-font-select",
+            "aria-label": "글꼴 선택",
+            "data-gallery-font-select": "true",
+            "defaultValue": "default"
+          },
+          "children": [
+            {
+              "type": "basic",
+              "name": "Option",
+              "text": "기본",
+              "props": {
+                "value": "default"
+              }
+            },
+            {
+              "type": "basic",
+              "name": "Option",
+              "text": "고딕",
+              "props": {
+                "value": "gothic"
+              }
+            },
+            {
+              "type": "basic",
+              "name": "Option",
+              "text": "둥근",
+              "props": {
+                "value": "rounded"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "name": "Div",
+      "props": {
+        "className": "gallery-mode-select-wrap"
+      },
+      "children": [
+        {
+          "type": "basic",
+          "name": "Select",
+          "props": {
+            "className": "gallery-mode-select",
+            "aria-label": "템플릿 모드 선택",
+            "data-gallery-theme-select": "true",
+            "defaultValue": "light"
+          },
+          "children": [
+            {
+              "type": "basic",
+              "name": "Option",
+              "text": "밝음",
+              "props": {
+                "value": "light"
+              }
+            },
+            {
+              "type": "basic",
+              "name": "Option",
+              "text": "미명",
+              "props": {
+                "value": "dim"
+              }
+            },
+            {
+              "type": "basic",
+              "name": "Option",
+              "text": "어둠",
+              "props": {
+                "value": "dark"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

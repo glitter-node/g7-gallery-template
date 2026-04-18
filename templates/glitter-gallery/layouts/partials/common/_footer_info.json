@@ -1,0 +1,101 @@
+{
+  "layout_name": "glitter_gallery_partial_common_footer_info",
+  "type": "basic",
+  "name": "Div",
+  "props": {
+    "className": "gallery-footer-grid"
+  },
+  "children": [
+    {
+      "type": "basic",
+      "name": "Div",
+      "props": {
+        "className": "gallery-footer-card"
+      },
+      "children": [
+        {
+          "type": "basic",
+          "name": "Span",
+          "text": "$t:common.site_name",
+          "props": {
+            "className": "gallery-kicker"
+          }
+        },
+        {
+          "type": "basic",
+          "name": "P",
+          "text": "$t:footer.description",
+          "props": {
+            "className": "gallery-body"
+          }
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "name": "Div",
+      "props": {
+        "className": "gallery-footer-card"
+      },
+      "children": [
+        {
+          "type": "basic",
+          "name": "Span",
+          "text": "$t:nav.visit",
+          "props": {
+            "className": "gallery-kicker"
+          }
+        },
+        {
+          "type": "basic",
+          "name": "P",
+          "text": "화요일-일요일 10:00-18:00 / 월요일 휴관",
+          "props": {
+            "className": "gallery-body"
+          }
+        },
+        {
+          "type": "basic",
+          "name": "P",
+          "text": "서울시 중구 예술로 100, 2층",
+          "props": {
+            "className": "gallery-caption"
+          }
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "name": "Div",
+      "props": {
+        "className": "gallery-footer-card"
+      },
+      "children": [
+        {
+          "type": "basic",
+          "name": "Span",
+          "text": "$t:nav.contact",
+          "props": {
+            "className": "gallery-kicker"
+          }
+        },
+        {
+          "type": "basic",
+          "name": "P",
+          "text": "hello@glitter-gallery.local",
+          "props": {
+            "className": "gallery-body"
+          }
+        },
+        {
+          "type": "basic",
+          "name": "P",
+          "text": "$t:footer.copyright",
+          "props": {
+            "className": "gallery-caption"
+          }
+        }
+      ]
+    }
+  ]
+}

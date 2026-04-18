@@ -1,0 +1,82 @@
+{
+  "layout_name": "glitter_gallery_partial_common_mobile_nav",
+  "type": "basic",
+  "name": "Nav",
+  "props": {
+    "className": "gallery-mobile-nav"
+  },
+  "children": [
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.home",
+      "props": {
+        "href": "/",
+        "className": "gallery-mobile-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.about",
+      "props": {
+        "href": "/about",
+        "className": "gallery-mobile-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.exhibitions",
+      "props": {
+        "href": "/exhibitions",
+        "className": "gallery-mobile-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.artists",
+      "props": {
+        "href": "/artists",
+        "className": "gallery-mobile-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.collection",
+      "props": {
+        "href": "/collection",
+        "className": "gallery-mobile-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.visit",
+      "props": {
+        "href": "/visit",
+        "className": "gallery-mobile-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.news",
+      "props": {
+        "href": "/news",
+        "className": "gallery-mobile-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.contact",
+      "props": {
+        "href": "/contact",
+        "className": "gallery-mobile-link"
+      }
+    }
+  ]
+}
