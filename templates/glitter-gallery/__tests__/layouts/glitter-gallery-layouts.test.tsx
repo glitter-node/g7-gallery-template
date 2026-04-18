@@ -50,7 +50,75 @@ const TestForm = createBasic('form');
 const TestLabel = createBasic('label');
 const TestTextarea = createBasic('textarea');
 const TestButton = createBasic('button');
+const TestSelect = createBasic('select');
+const TestOption = createBasic('option');
 const TestFragment = ({ children }: { children?: React.ReactNode }) => React.createElement(React.Fragment, null, children);
+
+function TestSlotContainer({
+  slotId,
+  className,
+  children,
+}: {
+  slotId: string;
+  className?: string;
+  children?: React.ReactNode;
+}) {
+  const [slotComponents, setSlotComponents] = React.useState<any[]>([]);
+
+  const getSlotContext = React.useCallback(() => {
+    const directSlotContext = (window as any).__slotContextValue;
+    if (directSlotContext) {
+      return directSlotContext;
+    }
+
+    return (window as any).G7Core?.getSlotContext?.() ?? null;
+  }, []);
+
+  const updateSlotComponents = React.useCallback(() => {
+    const slotContext = getSlotContext();
+    if (slotContext?.isEnabled) {
+      setSlotComponents(slotContext.getSlotComponents(slotId));
+    }
+  }, [getSlotContext, slotId]);
+
+  React.useEffect(() => {
+    const slotContext = getSlotContext();
+    if (!slotContext?.isEnabled) {
+      return;
+    }
+
+    updateSlotComponents();
+    return slotContext.subscribeToSlot(slotId, updateSlotComponents);
+  }, [getSlotContext, slotId, updateSlotComponents]);
+
+  const g7Core = (window as any).G7Core;
+  const DynamicRenderer = g7Core?.getDynamicRenderer?.();
+
+  if (!DynamicRenderer || !g7Core) {
+    return React.createElement('div', { className }, children);
+  }
+
+  return React.createElement(
+    'div',
+    { className },
+    ...slotComponents.map((registration) =>
+      React.createElement(DynamicRenderer, {
+        key: registration.componentDef.id || 'slot-' + slotId + '-' + registration.order,
+        componentDef: registration.componentDef,
+        dataContext: registration.dataContext,
+        translationContext: registration.translationContext,
+        registry: g7Core.getComponentRegistry(),
+        bindingEngine: g7Core.getDataBindingEngine(),
+        translationEngine: g7Core.getTranslationEngine(),
+        actionDispatcher: g7Core.getActionDispatcher(),
+        parentComponentContext: registration.getParentComponentContext?.(),
+        parentFormContextProp: registration.parentFormContext,
+        isRootRenderer: false,
+      })
+    ),
+    children
+  );
+}
 
 function TestInput(props: Record<string, any>) {
   return React.createElement('input', props);
@@ -80,7 +148,10 @@ function setupRegistry(): ComponentRegistry {
     Input: { component: TestInput, metadata: { name: 'Input', type: 'basic' } },
     Textarea: { component: TestTextarea, metadata: { name: 'Textarea', type: 'basic' } },
     Button: { component: TestButton, metadata: { name: 'Button', type: 'basic' } },
+    Select: { component: TestSelect, metadata: { name: 'Select', type: 'basic' } },
+    Option: { component: TestOption, metadata: { name: 'Option', type: 'basic' } },
     Img: { component: TestImg, metadata: { name: 'Img', type: 'basic' } },
+    SlotContainer: { component: TestSlotContainer, metadata: { name: 'SlotContainer', type: 'composite' } },
     Fragment: { component: TestFragment, metadata: { name: 'Fragment', type: 'layout' } },
   };
 
@@ -135,15 +206,22 @@ function injectSlotContent(components: JsonValue[], slots: Record<string, JsonVa
   const resolved: JsonValue[] = [];
 
   for (const component of components) {
-    if (component.type === 'slot' && component.name && slots[component.name]) {
-      resolved.push(...slots[component.name]);
-      continue;
-    }
-
     const cloned = JSON.parse(JSON.stringify(component));
     if (Array.isArray(cloned.children)) {
       cloned.children = injectSlotContent(cloned.children, slots);
     }
+
+    if (cloned.slot) {
+      const slotId = String(cloned.slot);
+      if (slots[slotId]) {
+        delete cloned.slot;
+        cloned.children = [
+          ...(Array.isArray(cloned.children) ? cloned.children : []),
+          ...slots[slotId].map((slotComponent) => JSON.parse(JSON.stringify(slotComponent))),
+        ];
+      }
+    }
+
     resolved.push(cloned);
   }
 

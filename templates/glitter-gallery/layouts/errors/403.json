@@ -1,9 +1,9 @@
 {
   "version": "1.0.0",
-  "layout_name": "404",
+  "layout_name": "403",
   "extends": "_user_base",
   "meta": {
-    "title": "$t:error.not_found_title"
+    "title": "$t:error.forbidden_title"
   },
   "data_sources": [],
   "slots": {
@@ -20,7 +20,7 @@
             "name": "Span",
             "props": {
               "className": "gallery-error-code",
-              "text": "404"
+              "text": "403"
             }
           },
           {
@@ -28,7 +28,7 @@
             "name": "H1",
             "props": {
               "className": "gallery-error-title",
-              "text": "$t:error.not_found_title"
+              "text": "$t:error.forbidden_title"
             }
           },
           {
@@ -36,7 +36,7 @@
             "name": "P",
             "props": {
               "className": "gallery-error-description",
-              "text": "$t:error.not_found_description"
+              "text": "$t:error.forbidden_description"
             }
           },
           {

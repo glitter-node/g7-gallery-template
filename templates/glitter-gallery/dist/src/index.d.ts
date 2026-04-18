@@ -3,6 +3,30 @@ import { default as templateMetadata } from '../template.json';
 type BaseProps<T> = T & {
     children?: React.ReactNode;
 };
+type TemplateBundle = {
+    Div: typeof Div;
+    Article: typeof Article;
+    Section: typeof Section;
+    Nav: typeof Nav;
+    A: typeof A;
+    Span: typeof Span;
+    P: typeof P;
+    H1: typeof H1;
+    H2: typeof H2;
+    H3: typeof H3;
+    Ul: typeof Ul;
+    Li: typeof Li;
+    Img: typeof Img;
+    Form: typeof Form;
+    Label: typeof Label;
+    Input: typeof Input;
+    Select: typeof Select;
+    Option: typeof Option;
+    Textarea: typeof Textarea;
+    Button: typeof Button;
+    templateMetadata: typeof templateMetadata;
+    initTemplate: typeof initTemplate;
+};
 export declare const Div: (props: BaseProps<React.HTMLAttributes<HTMLDivElement>>) => React.DOMElement<React.HTMLAttributes<HTMLDivElement> & {
     children?: React.ReactNode;
 }, Element>;
@@ -63,5 +87,8 @@ export declare const Textarea: (props: BaseProps<React.TextareaHTMLAttributes<HT
 export declare const Button: (props: BaseProps<React.ButtonHTMLAttributes<HTMLButtonElement>>) => React.DOMElement<React.ButtonHTMLAttributes<HTMLButtonElement> & {
     children?: React.ReactNode;
 }, Element>;
+export declare const handlerMap: Record<string, never>;
 export { templateMetadata };
 export declare function initTemplate(): void;
+declare const templateBundle: TemplateBundle;
+export default templateBundle;

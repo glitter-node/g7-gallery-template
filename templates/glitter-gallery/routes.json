@@ -59,6 +59,22 @@
       }
     },
     {
+      "path": "/press",
+      "layout": "press",
+      "auth_required": false,
+      "meta": {
+        "title": "$t:nav.press"
+      }
+    },
+    {
+      "path": "/links",
+      "layout": "links",
+      "auth_required": false,
+      "meta": {
+        "title": "$t:nav.links"
+      }
+    },
+    {
       "path": "/contact",
       "layout": "contact",
       "auth_required": false,

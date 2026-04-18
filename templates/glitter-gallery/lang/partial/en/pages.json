@@ -12,5 +12,13 @@
   "seo_home_description": "A refined museum-style layout for exhibitions, artists, collections, and visitor information.",
   "seo_exhibitions_description": "Browse current, upcoming, and archived exhibitions with period and status details.",
   "seo_artists_description": "Introduce participating artists with portraits, short bios, and practice keywords.",
-  "seo_visit_description": "Check opening hours, location, admission, and reservation links in one place."
+  "seo_visit_description": "Check opening hours, location, admission, and reservation links in one place.",
+  "press_title": "Press",
+  "links_title": "Links",
+  "seo_about_description": "Introduce the curatorial stance, editorial tone, and operating posture of the space.",
+  "seo_collection_description": "Present collection highlights with media groupings and short archival notes.",
+  "seo_news_description": "Summarize announcements and program updates with clear dates and short summaries.",
+  "seo_press_description": "Provide press releases, institutional copy, and media request guidance in an official tone.",
+  "seo_links_description": "Gather reservations, official channels, archives, and partner destinations by intent.",
+  "seo_contact_description": "Guide visitors to the right contact path for visits, collaborations, rentals, and materials."
 }

@@ -64,8 +64,10 @@
       "label",
       "li",
       "nav",
+      "option",
       "p",
       "section",
+      "select",
       "span",
       "textarea",
       "ul"
@@ -91,7 +93,7 @@
     }
   },
   "features": {
-    "dark_mode": false,
+    "dark_mode": true,
     "responsive": true,
     "multi_language": true,
     "multi_currency": false

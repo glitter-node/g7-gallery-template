@@ -61,6 +61,7 @@ modules/*/
 plugins/*/
 !plugins/_bundled/
 templates/*/
+templates/glitter-gallery/node_modules/
 !templates/_bundled/
 !templates/glitter-gallery/
 !templates/glitter-gallery/**

@@ -1,5 +1,15 @@
 {
+  "unauthorized_title": "Sign in required",
+  "unauthorized_description": "You need to sign in before accessing this page.",
+  "forbidden_title": "Access denied",
+  "forbidden_description": "Your current account does not have permission to view this page.",
   "not_found_title": "Page not found",
   "not_found_description": "The page you requested does not exist or has moved.",
+  "server_error_title": "Server error",
+  "server_error_description": "A temporary error occurred. Please try again in a moment.",
+  "service_unavailable_title": "Service unavailable",
+  "service_unavailable_description": "The service is temporarily unavailable because of maintenance or heavy load.",
+  "maintenance_title": "Under maintenance",
+  "maintenance_description": "We are performing maintenance to improve stability. Please check back shortly.",
   "back_home": "Back to home"
 }

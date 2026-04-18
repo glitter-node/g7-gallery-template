@@ -52,7 +52,11 @@
       "pageDefaults": {
         "home": {
           "title": "Glitter Gallery | 미술관형 사용자 템플릿",
-          "description": "대표 전시, 작가, 소장품, 방문 안내를 감성적인 에디토리얼 레이아웃으로 제공하는 미술관형 홈 화면"
+          "description": "대표 전시, 작가, 소장품, 방문 안내를 에디토리얼 구조로 정리한 미술관형 홈 화면"
+        },
+        "about": {
+          "title": "소개 | Glitter Gallery",
+          "description": "기관의 큐레이션 방향, 공간 태도, 운영 원칙을 차분한 서술 중심으로 소개하는 페이지"
         },
         "exhibitions": {
           "title": "전시 안내 | Glitter Gallery",
@@ -62,9 +66,29 @@
           "title": "작가 소개 | Glitter Gallery",
           "description": "작가 프로필 이미지와 짧은 소개, 작업 키워드를 중심으로 구성한 작가 목록 페이지"
         },
+        "collection": {
+          "title": "소장품 | Glitter Gallery",
+          "description": "대표 소장품과 수집 키워드, 매체 구성을 카드와 메모 형식으로 보여주는 페이지"
+        },
         "visit": {
           "title": "방문 안내 | Glitter Gallery",
           "description": "운영시간, 위치, 관람료, 예약 링크를 한 번에 확인할 수 있는 방문 안내 페이지"
+        },
+        "news": {
+          "title": "소식 | Glitter Gallery",
+          "description": "운영 공지와 프로그램 업데이트, 일정 안내를 텍스트 중심으로 정리한 공지 페이지"
+        },
+        "press": {
+          "title": "보도자료 | Glitter Gallery",
+          "description": "전시 보도자료, 기관 소개 문안, 미디어 문의 흐름을 공식 문서 톤으로 정리한 페이지"
+        },
+        "links": {
+          "title": "외부 링크 | Glitter Gallery",
+          "description": "예약, 공식 채널, 외부 아카이브, 파트너 연결 경로를 목적별로 정리한 링크 허브"
+        },
+        "contact": {
+          "title": "문의 | Glitter Gallery",
+          "description": "공간 대관, 협업, 관람 문의처럼 운영성 연락 지점을 분리해 안내하는 문의 페이지"
         }
       }
     }
@@ -123,6 +147,12 @@
     },
     "Button": {
       "tag": "button"
+    },
+    "Select": {
+      "tag": "select"
+    },
+    "Option": {
+      "tag": "option"
     }
   }
 }

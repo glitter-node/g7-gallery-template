@@ -72,6 +72,24 @@
     {
       "type": "basic",
       "name": "A",
+      "text": "$t:nav.press",
+      "props": {
+        "href": "/press",
+        "className": "gallery-nav-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
+      "text": "$t:nav.links",
+      "props": {
+        "href": "/links",
+        "className": "gallery-nav-link"
+      }
+    },
+    {
+      "type": "basic",
+      "name": "A",
       "text": "$t:nav.contact",
       "props": {
         "href": "/contact",

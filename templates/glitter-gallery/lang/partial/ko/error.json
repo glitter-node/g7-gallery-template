@@ -1,5 +1,15 @@
 {
+  "unauthorized_title": "로그인이 필요합니다",
+  "unauthorized_description": "이 페이지를 보려면 먼저 로그인해야 합니다.",
+  "forbidden_title": "접근 권한이 없습니다",
+  "forbidden_description": "현재 계정으로는 이 페이지에 접근할 수 없습니다.",
   "not_found_title": "페이지를 찾을 수 없습니다",
   "not_found_description": "요청한 페이지가 없거나 이동되었습니다.",
+  "server_error_title": "서버 오류가 발생했습니다",
+  "server_error_description": "일시적인 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.",
+  "service_unavailable_title": "서비스를 일시적으로 사용할 수 없습니다",
+  "service_unavailable_description": "점검 또는 과부하로 인해 잠시 응답할 수 없습니다.",
+  "maintenance_title": "현재 점검 중입니다",
+  "maintenance_description": "더 안정적인 서비스를 위해 점검을 진행하고 있습니다. 잠시 후 다시 방문해 주세요.",
   "back_home": "홈으로 이동"
 }
